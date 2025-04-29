@@ -20,14 +20,14 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400;1,600&display=swap">
 
     <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-H95NQYP74X"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-H95NQYP74X"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
 
-  gtag('config', 'G-H95NQYP74X');
-</script>
+      gtag('config', 'G-H95NQYP74X', { 'debug_mode': true }); // Debug mode for verification
+    </script>
 
     <style>
       * {
@@ -35,7 +35,6 @@
         padding: 0;
         box-sizing: border-box;
       }
-
       body {
         font-family: 'Cormorant Garamond', 'Georgia', serif;
         background-color: #1A1F2C;
@@ -47,7 +46,6 @@
         justify-content: center;
         overflow-x: hidden;
       }
-
       .container {
         max-width: 800px;
         width: 100%;
@@ -55,35 +53,28 @@
         position: relative;
         z-index: 10;
       }
-
       .fade-in {
         opacity: 0;
         transition: opacity 1s ease-out;
       }
-
       .fade-in.visible {
         opacity: 1;
       }
-
       .poem-section {
         opacity: 0;
         transition: opacity 1.5s ease-out;
         margin-bottom: 2rem;
       }
-
       .poem-section.visible {
         opacity: 1;
       }
-
       .poem-text {
         text-align: center;
       }
-
       header {
         text-align: center;
         margin-bottom: 2rem;
       }
-
       h1 {
         font-size: 2.5rem;
         font-weight: bold;
@@ -91,7 +82,6 @@
         margin-bottom: 0.5rem;
         letter-spacing: 0.05em;
       }
-
       p {
         font-size: 1.25rem;
         color: rgba(255, 248, 240, 0.8);
@@ -99,20 +89,17 @@
         font-style: italic;
       }
       .p2 {
-       font-size: 1.15rem;
-       color: rgba(255, 248, 240, 0.8);
-       line-height: 3;
-       font-style: normal; 
+        font-size: 1.15rem;
+        color: rgba(255, 248, 240, 0.8);
+        line-height: 3;
+        font-style: normal;
       }
-
       footer {
         text-align: center;
         margin-top: 2rem;
         color: rgba(255, 248, 240, 0.5);
         font-size: 0.875rem;
       }
-
-      /* Background effect */
       .background {
         position: fixed;
         inset: 0;
@@ -120,8 +107,6 @@
         height: 100%;
         pointer-events: none;
       }
-
-      /* Media queries */
       @media (min-width: 640px) {
         h1 {
           font-size: 3rem;
@@ -129,29 +114,22 @@
         p {
           font-size: 1.5rem;
         }
-        
       }
-
       @media (min-width: 768px) {
         h1 {
           font-size: 3.5rem;
         }
       }
-
-      /* Custom scrollbar */
       ::-webkit-scrollbar {
         width: 8px;
       }
-
       ::-webkit-scrollbar-track {
         background: rgba(30, 24, 18, 0.2);
       }
-
       ::-webkit-scrollbar-thumb {
         background: rgba(180, 160, 120, 0.3);
         border-radius: 4px;
       }
-
       ::-webkit-scrollbar-thumb:hover {
         background: rgba(180, 160, 120, 0.5);
       }
@@ -162,130 +140,55 @@
       <canvas id="backgroundCanvas"></canvas>
       <div class="gradient-overlay"></div>
     </div>
-    
+
     <div class="container">
       <div class="fade-in" id="content">
         <header>
           <h1>Ink and Ashes</h1>
-          <p class = 'p2'>A tale of love, loss, and sacrifice</p>
+          <p class="p2">A tale of love, loss, and sacrifice</p>
         </header>
 
         <div class="poem-text" id="poem">
-          <div class="poem-section">
-            <p>
-              After a day of the sky burning red,<br />
-              He placed his gun by an empty bed.<br />
-              With shaking hands, he pulled a page,<br />
-              Trapped in a war, his heartbeat in a cage.
-            </p>
-          </div>
-          
-          <div class="poem-section">
-            <p>
-              He pictured her by the window's light,<br />
-              Waiting through another silent night,<br />
-              Eyes on the stars, humming a tune,<br />
-              As if they whispered, "He's coming home soon."
-            </p>
-          </div>
-          
-          <div class="poem-section">
-            <p>
-              Her hair flowing in the quiet evening breeze,<br />
-              Her eyes, the color of dark eternal seas.<br />
-              He wrote of the days when he'd be free,<br />
-              Of a life beyond war, just her and he.
-            </p>
-          </div>
-          
-          <div class="poem-section">
-            <p>
-              He wrote of the days when the war would cease,<br />
-              When she'd be in his arms, finally at peace.<br />
-              The ink spilled like tears onto the pages,<br />
-              Writing her promises to last through the ages.
-            </p>
-          </div>
-          
-          <div class="poem-section">
-            <p>
-              But as he wrote the last line down,<br />
-              A messenger came, with a wrinkled frown.<br />
-              He spoke of a death that had come too soon<br />
-              Of her, lying still beneath the moon.
-            </p>
-          </div>
-          
-          <div class="poem-section">
-            <p>
-              With shaking hands, he rose from the chair,<br />
-              The letter still there, the promises now bare.<br />
-              He stepped to the battlefield, chest wide,<br />
-              Inviting the bullets, no place to hide.
-            </p>
-          </div>
-          
-          <div class="poem-section">
-            <p>
-              What good to fight a storm, now she was gone?<br />
-              The reason for winning, had long been withdrawn.<br />
-              No cry for mercy, no final breath,<br />
-              He walked with love, into the arms of death.
-            </p>
-          </div>
-          
-          <div class="poem-section">
-            <p>
-              As ink could not carry what lived in his chest,<br />
-              The words meant for her, couldn't rest.<br />
-              So he chose to deliver them, soul to soul,<br />
-              Their hearts finally reuniting as one whole.
-            </p>
-          </div>
+          <!-- Your poem sections -->
+          <div class="poem-section"><p>After a day of the sky burning red,<br />He placed his gun by an empty bed.<br />With shaking hands, he pulled a page,<br />Trapped in a war, his heartbeat in a cage.</p></div>
+          <div class="poem-section"><p>He pictured her by the window's light,<br />Waiting through another silent night,<br />Eyes on the stars, humming a tune,<br />As if they whispered, "He's coming home soon."</p></div>
+          <div class="poem-section"><p>Her hair flowing in the quiet evening breeze,<br />Her eyes, the color of dark eternal seas.<br />He wrote of the days when he'd be free,<br />Of a life beyond war, just her and he.</p></div>
+          <div class="poem-section"><p>He wrote of the days when the war would cease,<br />When she'd be in his arms, finally at peace.<br />The ink spilled like tears onto the pages,<br />Writing her promises to last through the ages.</p></div>
+          <div class="poem-section"><p>But as he wrote the last line down,<br />A messenger came, with a wrinkled frown.<br />He spoke of a death that had come too soon<br />Of her, lying still beneath the moon.</p></div>
+          <div class="poem-section"><p>With shaking hands, he rose from the chair,<br />The letter still there, the promises now bare.<br />He stepped to the battlefield, chest wide,<br />Inviting the bullets, no place to hide.</p></div>
+          <div class="poem-section"><p>What good to fight a storm, now she was gone?<br />The reason for winning, had long been withdrawn.<br />No cry for mercy, no final breath,<br />He walked with love, into the arms of death.</p></div>
+          <div class="poem-section"><p>As ink could not carry what lived in his chest,<br />The words meant for her, couldn't rest.<br />So he chose to deliver them, soul to soul,<br />Their hearts finally reuniting as one whole.</p></div>
         </div>
-        
+
         <footer>
           <p>-Anushka Parikh</p>
         </footer>
       </div>
     </div>
 
-    <!-- IMPORTANT: DO NOT REMOVE THIS SCRIPT TAG OR THIS VERY COMMENT! -->
     <script src="https://cdn.gpteng.co/gptengineer.js" type="module"></script>
-    
+
     <script>
-      // Background animation
       document.addEventListener('DOMContentLoaded', function() {
-        // Fade in content
         setTimeout(() => {
           document.getElementById('content').classList.add('visible');
         }, 500);
-        
-        // Animate poem sections
         const poemSections = document.querySelectorAll('.poem-section');
         poemSections.forEach((section, index) => {
           setTimeout(() => {
             section.classList.add('visible');
           }, 300 * (index + 1));
         });
-        
-        // Canvas background
         const canvas = document.getElementById('backgroundCanvas');
         const ctx = canvas.getContext('2d');
-        
-        // Set canvas size
         function resizeCanvas() {
           canvas.width = window.innerWidth;
           canvas.height = window.innerHeight;
         }
-        
         window.addEventListener('resize', resizeCanvas);
         resizeCanvas();
-        
-        // Create particles
         const particles = [];
         const particleCount = Math.floor(window.innerWidth / 20);
-        
         class Particle {
           constructor() {
             this.x = Math.random() * canvas.width;
@@ -295,17 +198,14 @@
             this.speedY = (Math.random() - 0.5) * 0.5;
             this.opacity = Math.random() * 0.5 + 0.1;
           }
-          
           update() {
             this.x += this.speedX;
             this.y += this.speedY;
-            
             if (this.x > canvas.width) this.x = 0;
             if (this.x < 0) this.x = canvas.width;
             if (this.y > canvas.height) this.y = 0;
             if (this.y < 0) this.y = canvas.height;
           }
-          
           draw() {
             ctx.beginPath();
             ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2);
@@ -313,41 +213,25 @@
             ctx.fill();
           }
         }
-        
-        // Initialize particles
         for (let i = 0; i < particleCount; i++) {
           particles.push(new Particle());
         }
-        
-        // Animation loop
         function animate() {
           ctx.clearRect(0, 0, canvas.width, canvas.height);
-          
-          // Draw paper texture
-          const gradient = ctx.createRadialGradient(
-            canvas.width / 2, canvas.height / 2, 0,
-            canvas.width / 2, canvas.height / 2, Math.max(canvas.width, canvas.height) / 1.5
-          );
-          
+          const gradient = ctx.createRadialGradient(canvas.width / 2, canvas.height / 2, 0, canvas.width / 2, canvas.height / 2, Math.max(canvas.width, canvas.height) / 1.5);
           gradient.addColorStop(0, 'rgba(30, 24, 18, 0.95)');
           gradient.addColorStop(1, 'rgba(10, 8, 6, 0.98)');
-          
           ctx.fillStyle = gradient;
           ctx.fillRect(0, 0, canvas.width, canvas.height);
-          
-          // Update and draw particles
           particles.forEach(particle => {
             particle.update();
             particle.draw();
           });
-          
-          // Create connecting lines between close particles
           for (let i = 0; i < particles.length; i++) {
             for (let j = i + 1; j < particles.length; j++) {
               const dx = particles[i].x - particles[j].x;
               const dy = particles[i].y - particles[j].y;
               const distance = Math.sqrt(dx * dx + dy * dy);
-              
               if (distance < 100) {
                 ctx.beginPath();
                 ctx.strokeStyle = `rgba(255, 215, 170, ${0.1 * (1 - distance / 100)})`;
@@ -358,10 +242,8 @@
               }
             }
           }
-          
           requestAnimationFrame(animate);
         }
-        
         animate();
       });
     </script>
